@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://imageupload.io/ib/t2RL1EBcuStf9yL_1697892479.jpg" alt="Your Logo" class="logo">
+            <h2>User Registration</h2>
+        </div>
+        <form id="registration-form">
+            <div class="form-group">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <div class="password-icon">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <span class="password-symbol">&#128274;</span>
+                </div>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+            </div>
+            <div class="form-group">
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male &#9794;</option>
+                    <option value="female">Female &#9792;</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="profile-picture">Profile Picture:</label>
+                <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+            </div>
+           
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="agree" required> I agree to the Terms and Conditions
+                    </label>
+                    <a href="terms_and_conditions.html" class="terms-button">Terms and Conditions</a>
+                </div>
+            
+            <button type="submit" class="red-button">Register</button>
+        </form>
+    </div>
+</body>
+</html>
